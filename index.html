@@ -1237,6 +1237,16 @@
         // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash) {
+            const targetTabId = window.location.hash.substring(1);
+            const targetButton = document.querySelector(`.tab-btn[onclick*="'${targetTabId}'"]`);
+            if (targetButton) {
+                showTab(targetTabId, targetButton);
+            }
+        }
+    });
 </script>
 </body>
 </html>
