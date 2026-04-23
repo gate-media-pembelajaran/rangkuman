@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Penggunaan & Materi Pembelajaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --eyes-blue-dark: #0D47A1;
+            --eyes-blue-primary: #1565C0;
+            --eyes-blue-accent: #1E88E5;
+            --eyes-blue-medium: #64B5F6;
+            --eyes-blue-light: #BBDEFB;
+            --eyes-blue-soft: #E3F2FD;
+            --ice-blue: #E3F2FD;
+            --white: #ffffff;
+            --glass: rgba(255, 255, 255, 0.9);
+            --text-color: #2c3e50;
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--eyes-blue-soft);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto 40px;
+            padding: 20px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--eyes-blue-light);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--eyes-blue-dark);
+            font-size: 2rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2 i {
+            color: var(--eyes-blue-accent);
+        }
+
+        /* Steps Styling */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .step-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--eyes-blue-primary);
+            transition: transform 0.3s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--eyes-blue-medium);
+            margin-bottom: 10px;
+        }
+
+        /* Menu Content Cards */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid rgba(144, 202, 249, 0.3);
+        }
+
+        .menu-card h3 {
+            color: var(--eyes-blue-primary);
+            margin-top: 0;
+        }
+
+        .menu-card ul {
+            padding-left: 20px;
+        }
+
+        .menu-card ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            background: var(--eyes-blue-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--eyes-blue-primary);
+        }
+
+        .profile-info h3 {
+            margin: 0;
+            color: var(--eyes-blue-dark);
+            font-size: 1.8rem;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--eyes-blue-dark);
+            color: var(--white);
+            margin-top: 50px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section Langkah-langkah -->
+        <section id="langkah">
+            <h2><i class="fas fa-list-ol"></i> Langkah-langkah Membuka Website</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <p><strong>Buka aplikasi browser:</strong> Gunakan Google Chrome, Microsoft Edge, atau browser lainnya.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <p><strong>Masukkan alamat website:</strong> Ketik link Google Sites pada kolom pencarian (URL), misalnya: <code>https://sites.google.com/view/...</code></p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <p><strong>Tekan Enter:</strong> Tunggu hingga halaman website terbuka.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <p><strong>Login (jika diperlukan):</strong> Jika website bersifat privat, login menggunakan akun Google Account.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">05</div>
+                    <p><strong>Website berhasil dibuka:</strong> Halaman utama (Home) akan langsung tampil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Isi Menu -->
+        <section id="menu-info">
+            <h2><i class="fas fa-th-large"></i> Penjelasan Isi Menu Website</h2>
+            <div class="menu-grid">
+                <!-- 1. Home (Included in Hero) -->
+                
+                <!-- 2. Tujuan Pembelajaran -->
+                <div class="menu-card" id="tujuan">
+                    <h3><i class="fas fa-bullseye"></i> Tujuan Pembelajaran</h3>
+                    <p>Berisi tujuan yang ingin dicapai setelah mempelajari materi:</p>
+                    <ul>
+                        <li>Memahami konsep dasar</li>
+                        <li>Menjelaskan materi tertentu</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Materi -->
+                <div class="menu-card" id="materi">
+                    <h3><i class="fas fa-book-open"></i> Materi</h3>
+                    <p>Bagian inti dari website yang berisi penjelasan lengkap topik pembelajaran dalam bentuk:</p>
+                    <ul>
+                        <li><i class="fas fa-file-alt"></i> Teks</li>
+                        <li><i class="fas fa-image"></i> Gambar</li>
+                        <li><i class="fas fa-video"></i> Video</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Rangkuman -->
+                <div class="menu-card" id="rangkuman">
+                    <h3><i class="fas fa-clipboard-list"></i> Rangkuman</h3>
+                    <p>Berisi ringkasan materi dalam bentuk poin-poin penting untuk memudahkan pemahaman.</p>
+                </div>
+
+                <!-- 5. Evaluasi -->
+                <div class="menu-card" id="evaluasi">
+                    <h3><i class="fas fa-tasks"></i> Evaluasi</h3>
+                    <p>Digunakan untuk mengukur pemahaman melalui:</p>
+                    <ul>
+                        <li>Pilihan Ganda</li>
+                        <li>Quiz Interaktif</li>
+                        <li>Google Form</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+</body>
+</html>
