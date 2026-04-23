@@ -35,40 +35,38 @@
 
         /* Hero Section Premium */
         .hero {
-            background: var(--ice-blue);
-            color: rgb(0, 0, 0);
-            padding: 325px 0;
-            border-radius: 30px;
             text-align: center;
-            margin-bottom: 50px;
-            box-shadow: 0 20px 40px rgba(13, 71, 161, 0.2);
+            padding: 275px 0;
+            background: #BBDEFB; /* Dominan Blue */
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #90CAF9;
             position: relative;
             overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
         .hero h1 {
-            font-size: 2.8rem;
-            margin: 0;
-            letter-spacing: -1px;
-            font-weight: 800;
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            background: linear-gradient(to bottom, #0D47A1 0%, #1976D2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 2px 0 #90CAF9) 
+                    drop-shadow(0 4px 0 #64B5F6) 
+                    drop-shadow(0 6px 4px rgba(0,0,0,0.2));
+            position: relative;
+            display: inline-block;
         }
 
         .hero p {
             font-size: 1.2rem;
-            opacity: 0.9;
-            margin-top: 15px;
-            font-weight: 300;
+            color: #1565C0;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
 
         /* Dashboard Grid Layout */
