@@ -198,48 +198,11 @@
             border-top: 2px solid var(--eyes-blue-light);
         }
 
-        .source-text {
-            font-size: 0.75rem;
-            color: var(--eyes-blue-primary);
-            opacity: 0.8;
-            margin-top: 15px;
-            font-style: italic;
-            display: block;
-            text-align: right;
-            border-top: 1px dashed var(--eyes-blue-light);
-            padding-top: 8px;
-        }
-
         /* Responsive */
         @media (max-width: 850px) {
             .summary-grid { grid-template-columns: 1fr; }
             .card-full { grid-column: span 1; }
-            .hero { padding: 120px 20px; }
-            .hero h1 { 
-                font-size: 2.2rem; 
-                letter-spacing: 2px;
-                line-height: 1.2;
-            }
-            .card { padding: 25px; }
-            .card h2 { font-size: 1.3rem; }
-            
-            /* Fix for Karakteristik Desain Oval grid on mobile */
-            .card-full div[style*="grid-template-columns: 1fr 1fr"] {
-                grid-template-columns: 1fr !important;
-            }
-
-            .step-item {
-                padding: 12px 15px;
-                gap: 15px;
-            }
-            .step-number { font-size: 1.2rem; }
-            .step-text { font-size: 0.95rem; }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 { font-size: 1.8rem; }
-            .container { padding: 20px 15px; }
-            .badge { padding: 6px 12px; font-size: 0.8rem; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -302,7 +265,6 @@
                     <span class="badge">Sisir Ekor</span>
                     <span class="badge">Hair Dryer</span>
                 </div>
-                <span class="source-text">Sumber: Sari (2023)</span>
             </div>
 
             <!-- Persiapan -->
@@ -313,7 +275,6 @@
                     <li><strong>Pribadi:</strong> Baju kerja bersih, riasan fresh, tanpa perhiasan tangan.</li>
                     <li><strong>Klien:</strong> Konsultasi, lepas perhiasan klien, pasang cape.</li>
                 </ul>
-                <span class="source-text">Sumber: Katarina (2023)</span>
             </div>
 
             <!-- Alur Langkah Kerja -->
@@ -329,7 +290,6 @@
                     <div class="step-item"><span class="step-number">07</span> <span class="step-text">Pengecekan simetrisitas sisi kiri dan kanan.</span></div>
                     <div class="step-item"><span class="step-number">08</span> <span class="step-text">Finishing: Pengeringan dan Styling dengan Blow Dry.</span></div>
                 </div>
-                <span class="source-text">Sumber: Efrianova (2023)</span>
             </div>
         </div>
 
