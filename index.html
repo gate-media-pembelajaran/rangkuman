@@ -214,7 +214,32 @@
         @media (max-width: 850px) {
             .summary-grid { grid-template-columns: 1fr; }
             .card-full { grid-column: span 1; }
-            .hero h1 { font-size: 2rem; }
+            .hero { padding: 120px 20px; }
+            .hero h1 { 
+                font-size: 2.2rem; 
+                letter-spacing: 2px;
+                line-height: 1.2;
+            }
+            .card { padding: 25px; }
+            .card h2 { font-size: 1.3rem; }
+            
+            /* Fix for Karakteristik Desain Oval grid on mobile */
+            .card-full div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+
+            .step-item {
+                padding: 12px 15px;
+                gap: 15px;
+            }
+            .step-number { font-size: 1.2rem; }
+            .step-text { font-size: 0.95rem; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .container { padding: 20px 15px; }
+            .badge { padding: 6px 12px; font-size: 0.8rem; }
         }
     </style>
 </head>
